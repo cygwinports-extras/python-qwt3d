@@ -1,0 +1,112 @@
+pyqwt3d
+------------------------------------------
+PyQwt3D is a set of Python bindings for the QwtPlot3D library.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libGL1-6.5.1-1
+  libGLU1-6.5.1-1
+  numpy-1.0.1-1
+  pyqt-3.17.1-1
+  python-2.4.3-1
+  qt3-3.3.8-1
+  qwtplot3d-0.2.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  python-2.4.3-1
+  python-sip-4.6-1
+
+Canonical website:
+  http://pyqwt.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/pyqwt/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pyqwt3d-0.1.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pyqwt3d-0.1.4-X.cygport all
+
+This will create:
+  /usr/src/pyqwt3d-0.1.4-X-src.tar.bz2
+  /usr/src/pyqwt3d-0.1.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/python2.4/site-packages/Qwt3D/OpenGL.dll
+  /usr/lib/python2.4/site-packages/Qwt3D/_Qwt3D.dll
+  /usr/lib/python2.4/site-packages/Qwt3D/__init__.py
+  /usr/lib/python2.4/site-packages/Qwt3D/__init__.pyc
+  /usr/lib/python2.4/site-packages/Qwt3D/__init__.pyo
+  /usr/share/doc/Cygwin/pyqwt3d-0.1.4.README
+  /usr/share/doc/pyqwt3d-0.1.4/ANNOUNCEMENT-0.1.4.TXT
+  /usr/share/doc/pyqwt3d-0.1.4/CHANGES-0.1.4.TXT
+  /usr/share/doc/pyqwt3d-0.1.4/COPYING
+  /usr/share/doc/pyqwt3d-0.1.4/COPYING.PyQwt3D
+  /usr/share/doc/pyqwt3d-0.1.4/README
+  /usr/share/doc/pyqwt3d-0.1.4/THANKS
+  /usr/share/doc/pyqwt3d-0.1.4/TODO
+  /usr/share/sip/Qwt3D/OpenGL_Qt3_Module.sip
+  /usr/share/sip/Qwt3D/OpenGL_Qt4_Module.sip
+  /usr/share/sip/Qwt3D/OpenGL_mod.sip
+  /usr/share/sip/Qwt3D/Qwt3D_Qt3_Module.sip
+  /usr/share/sip/Qwt3D/Qwt3D_Qt4_Module.sip
+  /usr/share/sip/Qwt3D/features.sip
+  /usr/share/sip/Qwt3D/qwt3d_autoscaler.sip
+  /usr/share/sip/Qwt3D/qwt3d_axis.sip
+  /usr/share/sip/Qwt3D/qwt3d_axisvector.sip
+  /usr/share/sip/Qwt3D/qwt3d_cell.sip
+  /usr/share/sip/Qwt3D/qwt3d_cellfield.sip
+  /usr/share/sip/Qwt3D/qwt3d_color.sip
+  /usr/share/sip/Qwt3D/qwt3d_colorlegend.sip
+  /usr/share/sip/Qwt3D/qwt3d_colorvector.sip
+  /usr/share/sip/Qwt3D/qwt3d_coordsys.sip
+  /usr/share/sip/Qwt3D/qwt3d_doublevector.sip
+  /usr/share/sip/Qwt3D/qwt3d_drawable.sip
+  /usr/share/sip/Qwt3D/qwt3d_enrichment.sip
+  /usr/share/sip/Qwt3D/qwt3d_enrichment_std.sip
+  /usr/share/sip/Qwt3D/qwt3d_freevectorfield.sip
+  /usr/share/sip/Qwt3D/qwt3d_function.sip
+  /usr/share/sip/Qwt3D/qwt3d_gridmapping.sip
+  /usr/share/sip/Qwt3D/qwt3d_io.sip
+  /usr/share/sip/Qwt3D/qwt3d_io_gl2ps.sip
+  /usr/share/sip/Qwt3D/qwt3d_io_reader.sip
+  /usr/share/sip/Qwt3D/qwt3d_label.sip
+  /usr/share/sip/Qwt3D/qwt3d_mapping.sip
+  /usr/share/sip/Qwt3D/qwt3d_openglhelper.sip
+  /usr/share/sip/Qwt3D/qwt3d_parametricsurface.sip
+  /usr/share/sip/Qwt3D/qwt3d_plot.sip
+  /usr/share/sip/Qwt3D/qwt3d_portability.sip
+  /usr/share/sip/Qwt3D/qwt3d_scale.sip
+  /usr/share/sip/Qwt3D/qwt3d_surfaceplot.sip
+  /usr/share/sip/Qwt3D/qwt3d_triplefield.sip
+  /usr/share/sip/Qwt3D/qwt3d_types.sip
+  /usr/share/sip/Qwt3D/qwt3dmod.sip
+  /usr/share/sip/Qwt3D/types.sip
+
+------------------
+
+Port Notes:
+
+----- version 0.1.4-1 -----
+Version bump.
+
+----- version 0.1.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
