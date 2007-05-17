@@ -1,14 +1,15 @@
-pyqwt3d
+python-qwt3d
 ------------------------------------------
 PyQwt3D is a set of Python bindings for the QwtPlot3D library.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  libGL1-6.5.1-1
-  libGLU1-6.5.1-1
-  numpy-1.0.1-1
-  pyqt-3.17.1-1
-  python-2.4.3-1
+  libGL1-6.5.2-1
+  libGLU1-6.5.2-1
+  python-2.5.1-1
+  python-numpy-1.0.2-1
+  python-qt-3.17.2-2
+  python-sip-4.6-2
   qt3-3.3.8-1
   qwtplot3d-0.2.6-1
 
@@ -20,8 +21,7 @@ Build requirements:
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   make-3.81-1
-  python-2.4.3-1
-  python-sip-4.6-1
+  python-2.5.1-1
 
 Canonical website:
   http://pyqwt.sourceforge.net/
@@ -32,33 +32,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pyqwt3d-0.1.4-X-src.tar.bz2
+  unpack python-qwt3d-0.1.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pyqwt3d-0.1.4-X.cygport all
+  cygport ./python-qwt3d-0.1.4-X.cygport all
 
 This will create:
-  /usr/src/pyqwt3d-0.1.4-X-src.tar.bz2
-  /usr/src/pyqwt3d-0.1.4-X.tar.bz2
+  /usr/src/python-qwt3d-0.1.4-X-src.tar.bz2
+  /usr/src/python-qwt3d-0.1.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/lib/python2.4/site-packages/Qwt3D/OpenGL.dll
-  /usr/lib/python2.4/site-packages/Qwt3D/_Qwt3D.dll
-  /usr/lib/python2.4/site-packages/Qwt3D/__init__.py
-  /usr/lib/python2.4/site-packages/Qwt3D/__init__.pyc
-  /usr/lib/python2.4/site-packages/Qwt3D/__init__.pyo
-  /usr/share/doc/Cygwin/pyqwt3d-0.1.4.README
-  /usr/share/doc/pyqwt3d-0.1.4/ANNOUNCEMENT-0.1.4.TXT
-  /usr/share/doc/pyqwt3d-0.1.4/CHANGES-0.1.4.TXT
-  /usr/share/doc/pyqwt3d-0.1.4/COPYING
-  /usr/share/doc/pyqwt3d-0.1.4/COPYING.PyQwt3D
-  /usr/share/doc/pyqwt3d-0.1.4/README
-  /usr/share/doc/pyqwt3d-0.1.4/THANKS
-  /usr/share/doc/pyqwt3d-0.1.4/TODO
+  /usr/lib/python2.5/site-packages/Qwt3D/OpenGL.dll
+  /usr/lib/python2.5/site-packages/Qwt3D/_Qwt3D.dll
+  /usr/lib/python2.5/site-packages/Qwt3D/__init__.py
+  /usr/lib/python2.5/site-packages/Qwt3D/__init__.pyc
+  /usr/lib/python2.5/site-packages/Qwt3D/__init__.pyo
+  /usr/share/doc/Cygwin/python-qwt3d-0.1.4.README
+  /usr/share/doc/python-qwt3d-0.1.4/ANNOUNCEMENT-0.1.4.TXT
+  /usr/share/doc/python-qwt3d-0.1.4/CHANGES-0.1.4.TXT
+  /usr/share/doc/python-qwt3d-0.1.4/COPYING
+  /usr/share/doc/python-qwt3d-0.1.4/COPYING.PyQwt3D
+  /usr/share/doc/python-qwt3d-0.1.4/README
+  /usr/share/doc/python-qwt3d-0.1.4/THANKS
+  /usr/share/doc/python-qwt3d-0.1.4/TODO
   /usr/share/sip/Qwt3D/OpenGL_Qt3_Module.sip
   /usr/share/sip/Qwt3D/OpenGL_Qt4_Module.sip
   /usr/share/sip/Qwt3D/OpenGL_mod.sip
@@ -100,6 +100,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.1.4-2 -----
+Rebuilt for python-2.5.
 
 ----- version 0.1.4-1 -----
 Version bump.
