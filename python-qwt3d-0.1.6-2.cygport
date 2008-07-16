@@ -1,0 +1,27 @@
+inherit qt4 python
+
+DESCRIPTION="Python QwtPlot3D bindings"
+HOMEPAGE="http://pyqwt.sourceforge.net/"
+SRC_URI="mirror://sourceforge/pyqwt/PyQwt3D-${PV}.tar.gz"
+SRC_DIR="PyQwt3D-${PV}"
+
+DIFF_EXCLUDES="sip"
+
+src_compile() {
+	lndirs
+	cd ${B}/configure
+	rm configure.py && cp ${S}/configure/configure.py ${B}/configure
+	${PYTHON} configure.py \
+		--qt4 \
+		-I ${QINCLUDEDIR} \
+		-L ${QLIBDIR} \
+		|| error "configure.py error"
+	cygmake
+}
+
+src_install() {
+	cd ${B}/configure
+	cyginstall
+	python_optimize
+	dodoc ../ANNOUNCEMENT-${PV}.TXT ../CHANGES-${PV}.TXT ../COPYING.PyQwt3D
+}

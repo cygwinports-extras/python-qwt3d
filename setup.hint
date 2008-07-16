@@ -1,4 +1,4 @@
 category: KDE Python
-requires: cygwin libGL1 libGLU1 python python-numpy python-qt qt3 qwtplot3d
+requires: cygwin libGL1 libGLU1 libQtCore4 libQtGui4 libQtOpenGL4 libqwtplot3d0 python python-numpy python-qt4 python-sip
 sdesc: "Python QwtPlot3D bindings"
 ldesc: "PyQwt3D is a set of Python bindings for the QwtPlot3D library."
